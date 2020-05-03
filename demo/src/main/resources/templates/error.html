@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>error</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/community.css">
+    <script src="/js/jquery-3.4.1.min.js" type="application/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="application/javascript"></script>
+</head>
+<body>
+<div th:replace="~{navigation::nav}"></div>
+<div class="jumbotron">
+    <h1>错误</h1>
+    <p th:text="${message}">wait a monent</p>
+    <p><a class="btn btn-primary btn-lg" href="/" role="button">back to home</a> </p>
+</div>
+</body>
+</html>
